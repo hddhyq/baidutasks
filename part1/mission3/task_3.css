@@ -1,0 +1,51 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;padding: 0;
+}
+
+.main,.left,.middle,.right,.left img,.right img {
+	border: 1px solid #999;
+}
+
+.main {
+	margin: 20px;
+	padding: 20px;
+	min-width: 600px;
+	background-color: #eee;
+	overflow: hidden;
+}
+
+.left {
+	float: left;
+	position: relative;
+	padding: 20px;
+	width: 200px;
+	background-color: #3663F0;
+}
+
+.left h3 {
+	position: absolute;
+	top: 0;
+	right: 20px;
+}
+
+.right {
+	float: right;
+	padding: 20px 20px 0 20px;
+	width: 120px;
+	background-color: #3663F0;
+}
+
+.right img {
+	display: block;
+	margin-bottom: 20px;
+}
+
+.middle {
+	margin: 0 140px 0 220px;
+	padding: 20px;
+	background-color: #3663F0;
+}
