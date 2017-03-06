@@ -1,0 +1,291 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #908a8a;
+}
+#container {
+  position: relative;
+  overflow: hidden;
+  width: 980px;
+  height: 1386px;
+  margin: 0 auto 10px auto;
+  background-color: white;
+}
+
+/*页眉部分************************************************************/
+header {
+  position: absolute;
+  left: 44px;
+  overflow: hidden;
+  width: 892px;
+  height: 63px;
+  border-bottom: 2px solid #938e8c;
+}
+.ife_baidu_com {
+  font-family: 'SimHei';
+  font-size: 12px;
+  line-height: 1.167;
+  position: absolute;
+  top: 44px;
+  left: 5px;
+  color: rgb(255, 255, 255);
+}
+._2016_03 {
+  font-family: 'SimHei';
+  font-size: 12px;
+  line-height: 1.167;
+  position: absolute;
+  top: 44px;
+  right: 0;
+  color: rgb(212, 93, 92);
+}
+
+/*封面图区*************************************************************/
+.top_left_1 {
+  position: absolute;
+  top: 97px;
+  left: 44px;
+}
+.top_right_box {
+  position: absolute;
+  top: 98px;
+  left: 733px;
+  width: 203px;
+  height: 301px;
+  border-top: 2px solid #cc8091;
+}
+.about {
+  font-family: 'Microsoft YaHei';
+  font-size: 24px;
+  font-variant: small-caps;
+  position: absolute;
+  top: 10px;
+  width: 76px;
+  height: 9px;
+  text-decoration: underline;
+  color: #000;
+}
+.About_technologe_about_technologe__about_techno {
+  font-family: 'KaiTi';
+  font-size: 12px;
+  font-style: oblique;
+  line-height: .833;
+  position: absolute;
+  top: 76px;
+  color: rgb(103, 103, 103);
+}
+._700 {
+  font-family: 'Microsoft YaHei';
+  font-size: 117px;
+  font-style: oblique;
+  line-height: 1;
+  position: absolute;
+  top: 120px;
+  left: -18px;
+  color: rgb(117, 184, 107);
+}
+._3_2 {
+  font-family: 'Microsoft YaHei';
+  font-size: 55px;
+  line-height: 1;
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  color: rgb(204, 128, 145);
+}
+.css {
+  font-family: 'Microsoft YaHei';
+  font-size: 21px;
+  line-height: 1;
+  position: absolute;
+  top: 265px;
+  left: 87px;
+  color: rgb(204, 128, 145);
+}
+.cssssccsccscssc {
+  font-family: 'Microsoft YaHei';
+  font-size: 12px;
+  line-height: 1.167;
+  position: absolute;
+  top: 282px;
+  left: 87px;
+  color: rgba(35, 24, 21, .4);
+}
+
+/*文章Middle区*************************************************************/
+.article_middle {
+  position: absolute;
+  top: 465px;
+  left: 44px;
+  width: 892px;
+  height: 200px;
+}
+.What, .When, .How {
+  font-family: 'Microsoft YaHei';
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.What {
+  line-height: .524;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: rgb(65, 140, 89);
+}
+.When {
+  line-height: .524;
+  position: absolute;
+  top: 0;
+  left: 255px;
+  color: rgb(210, 153, 79);
+}
+.How {
+  line-height: .524;
+  position: absolute;
+  top: 0;
+  left: 488px;
+  color: rgb(204, 118, 128);
+}
+
+/*文章部分****/
+.What_article {
+  font-family: 'SimSun';
+  font-size: 12px;
+  line-height: 1.55;
+  position: absolute;
+  top: 33px;
+  left: 0;
+  overflow: hidden;
+  width: 228px;
+  color: rgb(118, 119, 119);
+}
+.When_article {
+  font-family: 'SimSun';
+  font-size: 12px;
+  line-height: 1.55;
+  position: absolute;
+  top: 33px;
+  left: 255px;
+  overflow: hidden;
+  width: 204px;
+  opacity: .7;
+  color: rgb(118, 119, 119);
+}
+.How_article {
+  font-family: 'SimSun';
+  font-size: 12px;
+  line-height: 1.75;
+  position: absolute;
+  top: 33px;
+  left: 488px;
+  overflow: hidden;
+  width: 131px;
+  color: rgb(118, 119, 119);
+}
+.What_433 {
+  font-family: 'Microsoft YaHei';
+  font-size: 12px;
+  line-height: 1.75;
+  position: absolute;
+  top: 115px;
+  left: 488px;
+  width: 130px;
+}
+.What_433 span {
+  font-style: oblique;
+  opacity: .7;
+  color: #cd4a48;
+}
+
+/* 下区*********************************************************************/
+.THE_TECHNOLOGE_OF_FRONT {
+  font-family: '黑体';
+  font-size: 42px;
+  font-weight: bold;
+  line-height: .9;
+  position: absolute;
+  top: 685px;
+  left: 42.844px;
+  color: #11456b;
+}
+.THE_TECHNOLOGE_OF_FRONT span {
+  font-family: '黑体';
+  font-size: 72px;
+  font-style: oblique;
+  color: #f5c327;
+}
+.front_area {
+  font-family: '黑体';
+  font-size: 33px;
+  font-weight: bold;
+  position: absolute;
+  top: 797px;
+  left: 42.844px;
+  color: #11456b;
+}
+.bottom_left_line {
+  position: absolute;
+  top: 848px;
+  left: 44px;
+  width: 415px;
+  height: 2px;
+  background-color: rgb(16, 69, 107);
+}
+.bottom_left_box1 {
+  font-family: 'SimSun';
+  font-size: 12px;
+  position: absolute;
+  top: 873px;
+  left: 44px;
+  width: 415px;
+  height: 450px;
+  color: #acb8b8;
+}
+.big_text {
+  font-family: 'Microsoft YaHei';
+  font-size: 70px;
+  line-height: .571;
+  top: 913.995px;
+  left: 44px;
+  float: left;
+  margin: 10px 11px 25px 0;
+  color: rgb(245, 227, 39);
+}
+.bottom_left_box1 img {
+  float: right;
+  margin: 15px 0 15px 15px;
+}
+.bottom_right_img1 {
+  position: absolute;
+  top: 685px;
+  left: 478px;
+}
+.bottom_right_img2 {
+  position: absolute;
+  top: 973px;
+  left: 478px;
+}
+
+/*页脚************************************************************************/
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 44px;
+  overflow: hidden;
+  width: 892px;
+  height: 63px;
+  border-top: 2px solid #938e8c;
+}
+.ife_baidu_com2 {
+  font-family: 'SimHei';
+  font-size: 12px;
+  line-height: 1.167;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  color: rgb(212, 93, 92);
+}
