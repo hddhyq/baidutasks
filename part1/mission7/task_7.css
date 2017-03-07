@@ -37,28 +37,18 @@ header #login_logo{
 
 }
 header ul {
-	position: absolute;
-	top: 13px;
-	left: 685px;
+	list-style-type: none;
 }
 header ul li {
-	font-size: 14px;
-  	font-family: "Microsoft YaHei";
-  	text-align: center;
-  	margin: 0 14px;
-	list-style-type: none;
-	display: block;
-	float: left;
-	color: #787b83;
-	width: 65px;
+	display: inline;
 }
 header ul li a {
-	text-decoration: none;
+
 }
 
 header ul li a:hover {
-	color: rgb(231, 79, 77);
-	border-bottom: 5px solid rgb(231, 79, 77);
+
+
 }
 
 
