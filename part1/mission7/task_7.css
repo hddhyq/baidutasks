@@ -1,0 +1,71 @@
+*{
+	padding: 0;margin:0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #171616;
+}
+.all {
+	min-width: 1280px;
+	width: 1280px;
+	height: 4554px;
+	margin: 0 auto;
+	background-color: white;
+}
+/*页眉************************************************************************/
+header {
+	position: relative;
+	width: 100%;
+	height: 56px;
+}
+header #books1 {
+	position: absolute;
+	top: 13px;
+	left: 59px;
+}
+header span {
+  font-size: 21px;
+  font-family: "SimHei";
+  color: rgb(57, 58, 58);
+  line-height: 1.286;
+  position: absolute;
+  left: 100px;
+  top: 19px;
+}
+header #login_logo{
+	position: absolute;
+
+}
+header ul {
+	position: absolute;
+	top: 13px;
+	left: 685px;
+}
+header ul li {
+	font-size: 14px;
+  	font-family: "Microsoft YaHei";
+  	text-align: center;
+  	margin: 0 14px;
+	list-style-type: none;
+	display: block;
+	float: left;
+	color: #787b83;
+	width: 65px;
+}
+header ul li a {
+	text-decoration: none;
+}
+
+header ul li a:hover {
+	color: rgb(231, 79, 77);
+	border-bottom: 5px solid rgb(231, 79, 77);
+}
+
+
+/*TimeOfNewLife***************************************************************/
+.Time_of_new_life {
+	width: 100%
+	height:854px;
+	position: relative;
+
+}
