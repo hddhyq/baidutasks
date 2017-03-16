@@ -1,5 +1,6 @@
-#task2： 零基础HTML及CSS编码
-###任务目的
+# task2： 零基础HTML及CSS编码
+
+### 任务目的
 
 
 +	1.针对设计稿样式进行合理的HTML架构，包括以下但不限于：
@@ -14,10 +15,10 @@
 	*	掌握CSS选择器的含义和用法
 	*	实践并掌握CSS的颜色、字体、背景、边框、盒模型、简单布局等样式的定义方式
 
-###任务描述
-  基于第一个任务“零基础HTML编码”的代码，参考示例图（[点击查看](http://7xrp04.com1.z0.glb.clouddn.com/task_1_2_1.jpg)），在步骤一的代码基础上增加CSS样式代码的编写。
+### 任务描述
+* 基于第一个任务“零基础HTML编码”的代码，参考示例图（[点击查看](http://7xrp04.com1.z0.glb.clouddn.com/task_1_2_1.jpg)），在步骤一的代码基础上增加CSS样式代码的编写。
  
-###任务注意事项
+### 任务注意事项
 
 * 	只需要完成HTML，CSS代码编写，不需要写JavaScript
 * 	示例图仅为参考，不需要完全实现一致，其中的图片、文案均可自行设定
@@ -25,7 +26,7 @@
 * 	HTML 及 CSS 代码结构清晰、规范
 
 
-###在线学习参考资料
+### 在线学习参考资料
 
 * [MDN HTML入门](https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/Introduction)
 * [MDN CSS入门教程](https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Getting_started)
