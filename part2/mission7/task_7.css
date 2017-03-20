@@ -1,0 +1,23 @@
+* {
+	box-sizing: border-box;
+	margin:0;padding: 0;
+}
+.order-area {
+	width: 103px;
+	margin: 10px auto;
+}
+
+#root {
+	display: flex;
+	width: 1250px;
+	height: 250px;
+	margin: 10px auto;
+	border: 1px solid black;
+	flex-direction: row;
+}
+.child_1,.child_2,.child_3 {
+	display: flex;
+	border: 1px solid black;
+	margin: 30px;
+	flex-grow: 1;
+}
