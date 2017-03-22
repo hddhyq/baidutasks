@@ -1,0 +1,116 @@
+*
+{
+    margin-top: 0;
+    padding: 0;
+}
+/***表格*******************************************************************************/
+table thead
+{
+    text-align: left;
+
+    color: white;
+    background-color: black;
+}
+table tbody
+{
+    font-weight: bold;
+}
+table tbody tr:nth-child(2n+1)
+{
+    background-color: white;
+}
+table tbody tr:nth-child(2n)
+{
+    background-color: #c2c0c0;
+}
+table tbody tr:nth-child(-n+3)
+{
+    color: red;
+}
+
+/**输入框******************************************************************************/
+.ipt
+{
+    margin-top: 40px;
+}
+.ipt input
+{
+    width: 100px;
+
+    transition: width .7s;
+}
+
+.ipt input:focus
+{
+    width: 200px;
+}
+/**图像轮播***************************************************************************/
+.wrap
+{
+    overflow: hidden;
+
+    width: 300px;
+    height: 200px;
+    margin-top: 40px;
+}
+.item:nth-child(1)
+{
+    background-color: red;
+}
+.item:nth-child(2)
+{
+    background-color: blue;
+}
+.item:nth-child(3)
+{
+    background-color: green;
+}
+#one:target ~ .slide
+{
+    left: 0;
+}
+#two:target ~ .slide
+{
+    left: -100%;
+}
+#three:target ~ .slide
+{
+    left: -200%;
+}
+
+.item
+{
+    display: inline-block;
+    float: left;
+
+    width: 300px;
+    height: 200px;
+}
+.control
+{
+    position: absolute;
+    top: 510px;
+    left: 170px;
+}
+.control-item
+{
+    line-height: 40px;
+
+    display: inline-block;
+
+    width: 40px;
+    height: 40px;
+
+    text-align: center;
+    text-decoration: none;
+
+    background: rgba(255,255,255,.3);
+}
+.wrap ul
+{
+    position: relative;
+
+    width: 300%;
+
+    transition: left .8s ease;
+}
