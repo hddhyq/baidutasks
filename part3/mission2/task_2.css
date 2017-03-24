@@ -1,0 +1,42 @@
+table {
+    margin: 50px auto;
+}
+
+td:first-child {
+    font-size: 24px;
+    height: 50px;
+    padding-right: 30px;
+    text-align: right;
+}
+
+td:nth-child(1) {
+    padding-left: 10px;
+}
+
+input {
+    font-size: 26px;
+    width: 250px;
+    height: 32px;
+    border-color: #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    font-size: 24px;
+    width: 90px;
+    height: 40px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #2563ad;
+}
+
+span {
+    color: #ccc;
+}
+
+.right {
+    text-align: right;
+}
