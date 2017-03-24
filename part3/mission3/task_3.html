@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>任务三：表单（三）联动</title>
+	<link rel="stylesheet" href="task_3.css">
+</head>
+<body>
+	<div id="form-container">
+		<div id="radio-select">
+			<div class="radio">
+			<label>
+				<input type="radio" name="optionsRadios" id="inSchoolRadio" checked>在校生
+			</label>
+			</div>
+
+			<div class="radio">
+				<label>
+					<input type="radio" name="optionsRadios" id="outSchoolRadio">非在校生
+				</label>
+			</div>
+		</div>
+
+		<div id="select-container">
+			<div class="inSchool">
+				<span>学校</span>
+				<select id="select1" class="select">
+					<option value="bj">北京</option>
+					<option value="sh">上海</option>
+					<option value="wh">武汉</option>
+				</select>
+
+				<select id="select2" class="select">
+					<option value="school1">北京大学</option>
+					<option value="school2">清华大学</option>
+					<option value="school3">北京航空航天大学</option>
+				</select>
+			</div>
+
+			<div class="outSchool hide">
+				<span>就业单位</span>
+				<input type="text" class="input">
+			</div>
+		</div>
+	</div>
+<script src="task_3.js"></script>
+</body>
+</html>
