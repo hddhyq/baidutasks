@@ -1,0 +1,177 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#container
+{
+    position: relative;
+    top: 160px;
+
+    width: 480px;
+    height: 300px;
+    margin: 0 auto;
+
+    background-image: url(bea.jpg);
+}
+/*文字部分上浮*/
+#container #aLink 
+{
+	cursor: pointer;
+    line-height: 50px;
+    padding: 25px 35px;
+
+    position: absolute;
+    top: 100px;
+    left: 100px;
+
+    -webkit-transition: opacity .3s linear,top .3s linear;
+            transition: opacity .3s linear,top .3s linear;
+    text-align: center;
+
+    opacity: 0;
+}
+#container #aLink a
+{
+	font-weight: bolder;
+    font-size: 20px;
+
+    display: block;
+
+    text-decoration: none;
+}
+#container #aLink span {
+	display: block;
+	font-size: 26px;
+}
+#container:hover #aLink
+{
+    top: 75px;
+
+    opacity: 1;
+}
+/*背景的模糊*/
+#container::before
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    content: '';
+    -webkit-transition: -webkit-filter .3s linear;
+            transition: -webkit-filter .3s linear;
+            transition:         filter .3s linear;
+            transition:         filter .3s linear, -webkit-filter .3s linear;
+
+    background-image: url(bea.jpg);
+}
+#container:hover::before
+{
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+}
+/*文字的流光效果*/
+@-webkit-keyframes gradient
+{
+    from
+    {
+        background-position: 0 0;
+    }
+    to
+    {
+        background-position: -100% 0;
+    }
+}
+@keyframes gradient
+{
+    from
+    {
+        background-position: 0 0;
+    }
+    to
+    {
+        background-position: -100% 0;
+    }
+}
+#aLink span
+{
+    background-image: -webkit-linear-gradient(left,yellow,green 25%,yellow 50%,green 75%,yellow 100%);
+    -webkit-background-clip: text;
+    background-size: 200% 100%;
+
+    -webkit-text-fill-color: transparent;
+}
+#container:hover span
+{
+    -webkit-animation: gradient 3s linear infinite;
+            animation: gradient 3s linear infinite;
+}
+#aLink a
+{
+    background-image: -webkit-linear-gradient(left,red,yellow 25%,red 50%,yellow 75%,red 100%);
+    -webkit-background-clip: text;
+    background-size: 200% 100%;
+
+    -webkit-text-fill-color: transparent;
+}
+#container:hover a
+{
+    -webkit-animation: gradient 3s linear infinite;
+            animation: gradient 3s linear infinite;
+}
+/*边框的加入*/
+#top-bottom::before,
+#top-bottom::after
+{
+    position: absolute;
+
+    box-sizing: border-box;
+
+    content: '';
+}
+#top-bottom::before
+{
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+    height: 0;
+
+    -webkit-transition: height .3s linear,top .3s linear;
+            transition: height .3s linear,top .3s linear;
+
+    opacity: .7;
+    border-right: 3.5px solid #fff;
+    border-left: 3.5px solid #fff;
+}
+#container:hover #top-bottom::before
+{
+    top: 0;
+
+    height: 100%;
+}
+#top-bottom::after
+{
+    top: 0;
+    left: 100%;
+
+    width: 0;
+    height: 100%;
+
+    -webkit-transition: width .3s linear,left .3s linear;
+            transition: width .3s linear,left .3s linear;
+
+    opacity: .7;
+    border-top: 7px solid #fff;
+    border-bottom: 7px solid #fff;
+}
+#container:hover #top-bottom::after
+{
+    left: 0;
+
+    width: 100%;
+}
+
