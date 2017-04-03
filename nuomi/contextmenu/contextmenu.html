@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>自定义网页右键菜单</title>
+	<style>
+		*{margin: 0; padding: 0;}
+		body {
+		}
+		#mymenu {
+			margin: 50px auto;
+			width: 100%;
+			height: 300px;
+			text-align: center;
+			background-color: grey;
+		}
+		#contextMenu {
+			display: none;
+			position: absolute;
+			text-align: center;
+			width: 100px;
+			list-style: none;
+			background-color: green;
+		}
+		#contextMenu li:hover {
+			background-color: lightgreen;
+		}
+		#contextMenu li a {
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<div id="mymenu">
+		<h1>右键点击这里,左键取消</h1>
+	</div>
+	<ul id="contextMenu">
+		<li><a href="#">haha</a></li>
+		<li><a href="#">hehe</a></li>
+		<li><a href="#">hihi</a></li>
+	</ul>
+</body>
+<script>
+		$ = function(el) {
+			return document.querySelector(el);
+		}
+		var contextMenu = $('#contextMenu');
+		$('#mymenu').addEventListener('mousedown', function(e){
+			e = e || window.event;
+			if (e.button == 2) {
+				document.oncontextmenu = function(e){
+					e.preventDefault();  //阻止原来的菜单
+				}
+				contextMenu.style.display = 'block';
+				var menuWidth = contextMenu.offsetWidth;
+				var menuHeight = contextMenu.offsetHeight;
+				var clientWidth = document.documentElement.clientWidth;
+				var clientHeight = document.documentElement.clientHeight;
+				if (clientHeight - e.clientY >= menuHeight) {
+					contextMenu.style.top = e.clientY + 'px'; //底部空间的确定
+				} else {
+					contextMenu.style.top = (e.clientY - menuHeight) + 'px';
+				}
+				if (clientWidth - e.clientX >= menuWidth) {
+					contextMenu.style.left = e.clientX + 'px';//右边空间的确定
+				} else {
+					contextMenu.style.left = (e.clientX - menuWidth) + 'px';
+				}
+			}
+		}, false);
+		document.body.addEventListener('click', function(){
+			contextMenu.style.display = 'none';
+		}, false);
+	</script>
+</html>
