@@ -1,0 +1,112 @@
+input
+{
+    display: none;
+
+    margin: 0;
+}
+#wrap
+{
+    width: 30%;
+    margin: 20px auto;
+}
+/********************************************************************************/
+.checkbox
+{
+    font-weight: bold;
+
+    margin-bottom: 30px;
+}
+
+.checkBox + label,
+.radios + label
+{
+    display: flex;
+
+    width: 16px;
+    height: 16px;
+
+    border: 1px solid #d9d9d9;
+}
+
+.checkBox:checked + label,
+.radios:checked + label
+{
+    font-weight: bold;
+
+    border: 1px solid #d73d32;
+}
+
+.checkBox:checked + label::after,
+.radios:checked + label::after
+{
+    font-size: 14px;
+    line-height: 8px;
+
+    width: 8px;
+    height: 8px;
+    margin: auto;
+
+    content: '\2714';
+
+    color: red;
+}
+
+/*radio*/
+.radio
+{
+    display: flex;
+
+    width: 50px;
+
+    justify-content: space-between;
+}
+
+.radios + label
+{
+    border-radius: 50%;
+}
+
+.radios:checked + label::after
+{
+    line-height: 8px;
+
+    width: 8px;
+    height: 8px;
+
+    content: '';
+
+    border-radius: 50%;
+    background: #d73d32;
+}
+
+
+/********雪碧图*********************************************************************/
+.checkBox_sprit + label,
+.radioBox_sprit + label
+{
+    display: inline-block;
+
+    width: 16px;
+    height: 16px;
+
+    border: none;
+    background: url('bg.png') no-repeat;
+}
+
+.checkBox_sprit + label
+{
+    background-position: -25px -32px;
+}
+.radioBox_sprit + label
+{
+    background-position: -24px -10px;
+}
+
+.checkBox_sprit:checked + label
+{
+    background-position: -60px -32px;
+}
+.radioBox_sprit:checked + label
+{
+    background-position: -59px -10px;
+}
