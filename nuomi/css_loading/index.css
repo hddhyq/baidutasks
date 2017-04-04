@@ -1,0 +1,94 @@
+* {
+  margin: 0;padding: 0;box-sizing: border-box;
+}
+.round {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/*外圈的圆环*/
+.bgcircle {
+  width: 100%;
+  height: 100%;
+  border: solid green 3px;
+  border-radius: 50%;
+  border-top-color: transparent;
+  overflow: hidden;
+  animation: circle-spining 2s infinite linear;
+}
+
+@keyframes circle-spining{
+      0%{transform:rotate(0deg);}
+      50%{transform:rotate(-180deg);}
+      100%{transform:rotate(-360deg);}
+}
+
+/*里面的圆饼*/
+.inner, .inner2 {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  border-radius: 56px;
+  overflow: hidden;
+  left: 12px;
+  top: 12px;
+}
+.inner {
+  opacity: 1;
+  background-color: green;
+  animation: second-half-hide 2s steps(1, end) infinite;
+}
+.inner2 {
+  opacity: 2;
+  background-color: lightgreen;
+  animation: second-half-show 2s steps(1, end) infinite;
+}
+.spiner, .filler, .masker {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+}
+.spiner {
+  border-radius: 56px 0 0 56px;
+  background-color: lightgreen;
+  transform-origin: right center;
+  animation: circle-spining 1s infinite linear;
+  left: 0;
+  top: 0;
+}
+.filler {
+  border-radius: 0 56px 56px 0;
+  background-color: lightgreen;
+  animation: second-half-hide 1s steps(1, end) infinite;
+  left: 50%;
+  top: 0;
+  opacity: 1;
+}
+.masker {
+  border-radius: 56px 0 0 56px;
+  background-color: green;
+  animation: second-half-show 1s steps(1, end) infinite;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.inner2 .spiner, .inner2 .filler {
+  background-color: green;
+}
+
+.inner2 .masker {
+  background-color: lightgreen;
+}
+@keyframes second-half-hide {
+  0%        { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+@keyframes second-half-show {
+  0%        { opacity: 0; }
+  50%, 100% { opacity: 1; }
+}
