@@ -40,12 +40,12 @@
 .inner {
   opacity: 1;
   background-color: green;
-  animation: second-half-hide 2s steps(1, end) infinite;
+  animation: second-half-hide 4s steps(1, end) infinite;
 }
 .inner2 {
-  opacity: 2;
+  opacity: 0;
   background-color: lightgreen;
-  animation: second-half-show 2s steps(1, end) infinite;
+  animation: second-half-show 4s steps(1, end) infinite;
 }
 .spiner, .filler, .masker {
   position: absolute;
@@ -56,14 +56,14 @@
   border-radius: 56px 0 0 56px;
   background-color: lightgreen;
   transform-origin: right center;
-  animation: circle-spining 1s infinite linear;
+  animation: circle-spining 2s infinite linear;
   left: 0;
   top: 0;
 }
 .filler {
   border-radius: 0 56px 56px 0;
   background-color: lightgreen;
-  animation: second-half-hide 1s steps(1, end) infinite;
+  animation: second-half-hide 2s steps(1, end) infinite;
   left: 50%;
   top: 0;
   opacity: 1;
@@ -71,7 +71,7 @@
 .masker {
   border-radius: 56px 0 0 56px;
   background-color: green;
-  animation: second-half-show 1s steps(1, end) infinite;
+  animation: second-half-show 2s steps(1, end) infinite;
   left: 0;
   top: 0;
   opacity: 0;
