@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS3实现3D 轮播图</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+	<h1>click pic or just let it go</h1>
+	<div class="banner">
+		<div id="container">
+			<img src="img/1.jpg" alt="bea">
+			<img src="img/2.jpg" alt="bea">
+			<img src="img/3.jpg" alt="bea">
+			<img src="img/4.jpg" alt="bea">
+			<img src="img/5.jpg" alt="bea">
+			<img src="img/6.jpg" alt="bea">
+			<img src="img/7.jpg" alt="bea">
+			<img src="img/8.jpg" alt="bea">
+			<img src="img/9.jpg" alt="bea">
+		</div>
+	</div>
+</body>
+<script>
+	var container = document.querySelector("#container");
+	var indexPic = 0;
+	var banner = function(){
+		var value = indexPic++ * -40;
+		container.style.transform = 'rotateY(' + value +'deg)';
+	}
+	
+	container.addEventListener('click', banner);
+	
+	window.setInterval(function(){ 
+	banner(); 
+	},3000);
+</script>
+</html>
