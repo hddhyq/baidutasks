@@ -12,8 +12,8 @@
 * 理解 css 3d 和 景深的原理
 
 ## 任务描述
-* 实现图示效果（点击查看）
-![](https://ww1.sinaimg.cn/large/006tNbRwly1fcr5jr0994g30w30gx4qz.gif)
+* 实现图示效果[（点击查看）
+](https://ww1.sinaimg.cn/large/006tNbRwly1fcr5jr0994g30w30gx4qz.gif)
 
 ## 任务注意事项
 * 只需要完成HTML，CSS代码编写，需要写一点JavaScript
